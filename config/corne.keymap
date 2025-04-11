@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Mouse {
+            bindings = <&tog 2>;
+            key-positions = <40 37>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
