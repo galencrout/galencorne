@@ -10,14 +10,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Mouse {
-            bindings = <&tog 2>;
-            key-positions = <40 37>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -66,7 +59,7 @@
 &kp TAB    &kp EXCL       &kp AT          &kp HASH        &kp DLLR         &kp PRCNT         &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &kp PAGE_DOWN  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP      &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp PG_UP      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                          &kp LGUI        &trans           &kp SPACE         &kp RET    &trans     &kp RALT
+                                          &kp LGUI        &trans           &kp SPACE         &kp RET    &trans     &tog 2
             >;
         };
 
